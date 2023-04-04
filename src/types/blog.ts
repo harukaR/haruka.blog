@@ -10,7 +10,11 @@ export type Blog ={
     content:string;
     description: string;
     limit:number;
-    offset:number
+    offset:number;
+    eyecatch:string;
+    url: string;
+    height: number;
+    width: number;
 }
 
 export type Eyecatch ={
