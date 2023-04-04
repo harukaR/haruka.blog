@@ -1,0 +1,21 @@
+@import 'styles/_color';
+.header{
+    box-shadow: 0 5px 3px -4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    
+    .headerFlex{
+        padding:  16px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .headerH1{
+            font-size: 30px;
+            letter-spacing: 4px;
+        }
+        .headerLink{
+            margin-left: auto;
+        }
+    }
+}

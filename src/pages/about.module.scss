@@ -1,0 +1,27 @@
+@import 'styles/_color';
+.aboutH2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 16px;
+}
+.name{
+    text-align: center;
+    color: $main_pink;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+.text{
+    text-align: center;
+}
+.content{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    .contentParts{
+        margin: 48px;
+        h3{
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+    }
+}

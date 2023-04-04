@@ -1,0 +1,12 @@
+.footerInner{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding:  16px;
+    justify-content: space-between;
+    .snsIcons{
+        display: flex;
+        gap: 16px;
+    }
+}
