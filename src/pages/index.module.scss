@@ -4,6 +4,15 @@
     grid-gap: 16px;
     justify-content: space-between;
     .articleItem{
-        border: solid 1px;
+        background: #fff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 5px;
+        .thumbnail{
+            border-radius: 5px 5px 0 0;
+        }
+        .articleTitle{
+            padding: 10px 16px;
+            font-size: 18px;
+        }
     }
 }

@@ -1,31 +1,55 @@
-import { ToggleMode } from 'components/Layout/ToggleMode'
-
-
 import Link from 'next/link'
+import Image from 'next/image'
+import styles from 'pages/index.module.scss'
+
+import { ToggleMode } from 'components/Layout/ToggleMode'
 import { Layout } from 'components/Layout/Layout'
 import { client } from 'lib/client'
+import {SectionTitle} from 'components/Layout/SectionTitle'
 import {Blog,Eyecatch,Category} from 'types/blog'
-import styles from 'pages/index.module.scss'
+
+
 
 
 type Props ={
   blogs: Blog[];
   eyecatch:Eyecatch[];
   category:Category[];
+  imageUrl:string;
 }
-export default function Home({blogs,eyecatch,category}:Props) {
+export default function Home({blogs,category,imageUrl}:Props) {
 
   return (
     <Layout>
+      <SectionTitle>
+        ~ Input ~
+      </SectionTitle>
       <ul className={styles.articleList}>
         {blogs.map((blog) => (
           <li key={blog.id} className={styles.articleItem}>
             <Link href={`/blog/${blog.id}`}>
-            {blog.title}
+            <Image
+              src={blog.eyecatch && `${blog.eyecatch.url}`}
+              sizes="100vw"
+              width={313}
+              height={176}
+              style={{
+                width: '100%',
+                height: 'auto',
+              }}
+              alt="ブログのアイキャッチ画像"
+              className={styles.thumbnail}
+
+            />
+            <p className={styles.articleTitle}>{blog.title}</p>
+  
             </Link>
           </li>
         ))}
       </ul>
+      <SectionTitle>
+        ~ output ~
+      </SectionTitle>
     </Layout>
   )
 }
