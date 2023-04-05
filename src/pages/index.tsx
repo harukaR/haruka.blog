@@ -22,7 +22,7 @@ export default function Home({blogs,category,imageUrl}:Props) {
   return (
     <Layout>
       <SectionTitle>
-        ~ Input ~
+         OutPut
       </SectionTitle>
       <ul className={styles.articleList}>
         {blogs.map((blog) => (
@@ -47,9 +47,6 @@ export default function Home({blogs,category,imageUrl}:Props) {
           </li>
         ))}
       </ul>
-      <SectionTitle>
-        ~ output ~
-      </SectionTitle>
     </Layout>
   )
 }
