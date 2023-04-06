@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { ToggleMode } from 'components/Layout/ToggleMode'
+import { ToggleMode } from 'components/Ui/ToggleMode'
 
 import styles from 'components/Layout/header.module.scss'
 import Link from 'next/link'
