@@ -12,17 +12,20 @@ export default function about() {
 
     <Layout>
 
-        <h2 className={styles.aboutH2}>about me!</h2>
-        <p className={styles.name}>haruka</p>
-        <p className={styles.text}>東京の会社でフロントエンドエンジニアとして働いています。</p>
         <div className={styles.content}>
+        <h2 className={styles.aboutH2}>about me!</h2>
+        <p className={styles.text}>東京の会社でフロントエンドエンジニアとして働いています。<br/>興味を持ったものにはすぐに飛びつきます。</p>
+          <div className={styles.contentParts}>
+          <h3>このサイトの目的</h3>
+            <p>運用を通して「Search Console」「Analytics」について学んだり、学習のアウトプットのために運用をしております。このサイトを通してお金稼ぎとかは一切考えておりません...</p>
+          </div>
           <div className={styles.contentParts}>
             <h3>趣味</h3>
             <p>ゲーム(FPS・ソシャゲ) / 読書</p>
           </div>
           <div className={styles.contentParts}>
-            <h3>ちょっとできること</h3>
-            <p >HTML,SCSS</p>
+            <h3>ちょっとできる</h3>
+            <p >Html,Scss,Photoshop,Illustrator</p>
           </div>
           <div className={styles.contentParts}>
             <h3>ほんのちょっとできる</h3>
