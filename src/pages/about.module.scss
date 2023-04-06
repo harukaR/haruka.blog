@@ -1,24 +1,24 @@
 @import 'styles/_color';
 .aboutH2{
-    text-align: center;
+    // text-align: center;
     font-size: 35px;
+    margin-top: 80px;
     margin-bottom: 16px;
 }
 .name{
-    text-align: center;
-    color: $main_pink;
+    color: #fff;
     font-size: 25px;
     margin-bottom: 8px;
 }
-.text{
-    text-align: center;
-}
+// .text{
+//     text-align: center;
+// }
 .content{
+    max-width: 717px;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
     .contentParts{
-        margin: 48px;
+        margin-top: 48px;
         h3{
             margin-bottom: 8px;
             font-size: 20px;
