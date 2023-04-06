@@ -1,9 +1,8 @@
 import styles from 'components/Layout/sectionTitle.module.scss'
-import { ReactNode } from 'react';
 
 
 type Props ={
-    children:ReactNode
+    children:string
 }
 
 export const SectionTitle =({children}:Props)=>{
