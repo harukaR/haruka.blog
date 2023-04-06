@@ -7,6 +7,7 @@ import { Layout } from 'components/Layout/Layout'
 import { client } from 'lib/client'
 import {SectionTitle} from 'components/Layout/SectionTitle'
 import {Blog,Eyecatch,Category} from 'types/blog'
+import { Button } from 'components/Ui/Button'
 
 
 
@@ -21,8 +22,11 @@ export default function Home({blogs,category,imageUrl}:Props) {
 
   return (
     <Layout>
+    <Button>
+      もっと知る！
+    </Button>
       <SectionTitle>
-         OutPut
+         OutPuts
       </SectionTitle>
       <ul className={styles.articleList}>
         {blogs.map((blog) => (
