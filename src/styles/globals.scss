@@ -17,17 +17,20 @@ a {
   box-sizing: border-box;
   
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+:root[data-theme="light"] {
+  /* ライトテーマで適用するプロパティ値 */
+  --c-primary: #6750a4;
+  --c-on-primary: #625b71;
+  color-scheme: light;
 }
-.svg-inline--fa{
-  height: unset;
-  color: $sns_black;
+:root[data-theme="dark"] {
+  /* ダークテーマで適用するプロパティ値 */
+  --c-primary: #d0bcff;
+  --c-on-primary: #ccc2dc;
+  color-scheme: dark;
+}
+.body {
+  /* CSS 変数の値を挿入する */
+  color: var(--c-on-primary);
+  background-color: var(--c-primary);
 }
