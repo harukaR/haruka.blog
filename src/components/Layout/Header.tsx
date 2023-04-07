@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+
 import { ToggleMode } from 'components/Ui/ToggleMode'
 
 import styles from 'components/Layout/header.module.scss'
