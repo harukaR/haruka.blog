@@ -5,16 +5,12 @@ import { useState } from 'react'
 import { useTheme } from "lib/theme";
 
 import styles from 'components/Ui/toggleMode.module.scss'
-
 import React from 'react'
 
-const { toggleTheme } = useTheme();
+
 export const ToggleMode = () => {
-    const [mode,setMode] = useState(true);
-    const handleMode =()=>{
-      setMode(!mode)
-      console.log(mode)
-    }
+  const {  toggleTheme,mode } = useTheme();
+
   return (
     <div onClick={toggleTheme}>
         {mode ? <FontAwesomeIcon icon={faSun} className={styles.modeIcon}  /> : <FontAwesomeIcon icon={faMoon} className={styles.modeIcon} />}
