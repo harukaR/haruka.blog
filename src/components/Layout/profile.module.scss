@@ -1,5 +1,6 @@
 
 @import 'styles/_color';
+@import 'styles/_variables';
 .profileWrap{
     max-width: 800px;
     width: 100%;
@@ -15,6 +16,8 @@
     }
     .profileSkillMap{
         display: flex;
+        padding: 0 16px;
+        flex-wrap: wrap;
         .profileSkill{
             width: fit-content;
             margin: 0 auto;
@@ -32,8 +35,11 @@
             .skillsList{
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
-                gap: 16px;
+                grid-gap: 16px;
                 text-align: center;
+                @include mq(w320){
+                    grid-gap: 10px;
+                }
                 .skillsItem{
                     background: #fff;
                     padding: 10px 10px 4px 10px;

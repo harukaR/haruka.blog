@@ -1,8 +1,16 @@
+@import 'styles/_variables';
 .articleList{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 345px));
     grid-gap: 16px;
     justify-content: space-between;
+    @include mq(w1100){
+        max-width: 800px;
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 370px));
+        justify-content: center;
+        grid-gap: 30px;
+    }
     .articleItem{
         background: #fff;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
