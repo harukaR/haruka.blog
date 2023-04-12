@@ -1,5 +1,5 @@
 import styles from 'components/Layout/sectionTitle.module.scss'
-
+import { motion } from "framer-motion";
 
 type Props ={
     children:string
@@ -7,8 +7,9 @@ type Props ={
 
 export const SectionTitle =({children}:Props)=>{
     return(
-    
-         <h2 className={styles.h2}>{children}</h2>
-
+            <h2 className={styles.h2}>
+                {children}
+            </h2>
+        
     )
 }

@@ -1,15 +1,17 @@
-import { Header } from 'components/Layout/Header'
+import { motion } from 'framer-motion'
 import { Layout } from 'components/Layout/Layout'
-import { ToggleMode } from 'components/Layout/ToggleMode'
 import styles from 'pages/about.module.scss'
-import Link from 'next/link'
-import { Children } from 'react'
 // import styles from 'components/Layout/header.module.scss'
 
 export default function about() {
   return (
     <>
-
+    <motion.div
+    initial={{ opacity: 0 }} // 初期状態
+    animate={{ opacity: 1 }} // マウント時
+    exit={{ opacity: 0 }}    // アンマウント時
+    transition={{ delay: .5 }}
+  >
     <Layout>
 
         <div className={styles.content}>
@@ -39,6 +41,7 @@ export default function about() {
 
         </div>
     </Layout>
+    </motion.div>
     </>
   )
 }
