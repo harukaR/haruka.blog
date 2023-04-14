@@ -4,6 +4,8 @@
     font-size: 35px;
     margin-top: 80px;
     margin-bottom: 16px;
+    color: $main_BgOrange;
+    letter-spacing: 4px;
 }
 .name{
     color: #fff;
@@ -19,9 +21,13 @@
     margin: 0 auto;
     .contentParts{
         margin-top: 48px;
-        h3{
+        .contentTitle{
             margin-bottom: 8px;
             font-size: 20px;
+            color: $main_BgOrange;
+        }
+        .text{
+            line-height: 1.6;
         }
     }
 }

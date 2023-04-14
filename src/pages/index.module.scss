@@ -18,9 +18,17 @@
         .thumbnail{
             border-radius: 5px 5px 0 0;
         }
-        .articleTitle{
-            padding: 10px 16px;
-            font-size: 18px;
+        .postDetail{
+            padding: 16px;
         }
+        .postDate{
+            font-size: 10px;
+            margin-top: 8px;
+        }
+    }
+}
+:root[data-theme="dark"] {
+    .postDetail{
+        color: #000;
     }
 }
