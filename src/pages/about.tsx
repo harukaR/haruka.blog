@@ -15,27 +15,30 @@ export default function about() {
     <Layout>
 
         <div className={styles.content}>
+        <div className={styles.contentParts}>
         <h2 className={styles.aboutH2}>about me!</h2>
-        <p className={styles.text}>東京の会社でフロントエンドエンジニアとして働いています。<br/>興味を持ったものにはすぐに飛びつきます。</p>
-          <div className={styles.contentParts}>
-          <h3>このサイトの目的</h3>
-            <p>運用を通して「Search Console」「Analytics」について学んだり、学習のアウトプットのために運用をしております。このサイトを通してお金稼ぎとかは一切考えておりません...</p>
+        <p className={styles.text}>東京の会社でフロントエンドエンジニアとして働いています。</p>
+         
+        </div>
+      <div className={styles.contentParts}>
+            <h3 className={styles.contentTitle}>このサイトの目的</h3>
+            <p className={styles.text}>運用を通して「Search Console」「Analytics」について学んだり、学習のアウトプットのために運用をしております。このサイトを通してお金稼ぎとかは一切考えておりません...</p>
           </div>
           <div className={styles.contentParts}>
-            <h3>趣味</h3>
-            <p>ゲーム(FPS・ソシャゲ) / 読書</p>
+            <h3 className={styles.contentTitle}>趣味</h3>
+            <p className={styles.text}>ゲーム / 読書</p>
           </div>
           <div className={styles.contentParts}>
-            <h3>ちょっとできる</h3>
-            <p >Html,Scss,Photoshop,Illustrator</p>
+            <h3 className={styles.contentTitle}>ちょっとできる</h3>
+            <p className={styles.text}>Html,Scss,Photoshop,Illustrator</p>
           </div>
           <div className={styles.contentParts}>
-            <h3>ほんのちょっとできる</h3>
-            <p>Javascript</p>
+            <h3 className={styles.contentTitle}>ほんのちょっとできる</h3>
+            <p className={styles.text}>Javascript</p>
           </div>
           <div className={styles.contentParts}>
-            <h3>触ったことある</h3>
-            <p>Next.js,React,Typescript</p>
+            <h3 className={styles.contentTitle}>触ったことある</h3>
+            <p className={styles.text}>Next.js, React ,Typescript</p>
           </div>
 
 
