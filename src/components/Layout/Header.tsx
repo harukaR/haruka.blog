@@ -14,7 +14,7 @@ export const Header = () => {
       <div className={styles.headerFlex}>
          <Link href='/' className={styles.headerLogo}>
          <Image src='/avatar.png' width={40} height={40} alt='アバターの画像'/>
-            <h1 className={styles.headerH1}>haruka.log</h1>
+            <h1 className={styles.headerH1}>haruka.blog</h1>
             
           </Link>
           <div>
