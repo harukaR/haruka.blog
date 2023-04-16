@@ -12,21 +12,12 @@ import {SectionTitle} from 'components/Layout/SectionTitle'
 import { Button } from 'components/Ui/Button'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
+import { Feed } from 'types/feed';
 
 
 
-type Feed ={
-  title:string;
-  link:string;
-  enclosure:string;
-  pubDate:string;
-}
 
 type Props ={
-  imageUrl:string;
-  title:string;
-  link:string;
-  isoDate: string;
   zennPosts:Array<Feed>;
 }
 
@@ -37,9 +28,10 @@ export default function Home({zennPosts}:Props) {
     visible: { opacity: 1, y: 0 },
   };
   const [ref, inView] = useInView({
-    threshold: 0.5, // 画面の50%が要素に重なったら検知
-    triggerOnce: true, // 一度アニメーションを開始したら、もう一度再生しない
+    threshold: 0.5, 
+    triggerOnce: true, 
   });
+
 
 
   
@@ -90,7 +82,6 @@ export default function Home({zennPosts}:Props) {
 
 
           ))}
-
         </ul>
         </motion.div>
       </Layout>
