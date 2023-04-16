@@ -28,25 +28,6 @@ export const Profile = ()=>{
                         </dd>
                     </dl>
                 </div>
-                {/* <dl className={styles.profileItem}>
-                    <dt>趣味</dt>
-                    <dd>ゲーム   /   読書</dd>
-                </dl>
-                <dl className={styles.profileItem}>
-                    <dt>なにをしている人？</dt>
-                    <dd>東京の企業でフロントエンドエンジニアとしてお仕事しています。</dd>
-                </dl>
-                <dl className={styles.profileItem}>
-                    <dt>今年の目標</dt>
-                    <dd>🌟個人開発でアプリケーションを作成する🌟</dd>
-                </dl>
-                <dl className={styles.profileItem}>
-                    <dt>経歴</dt>
-                    <dd>2525年:現在の会社にアルバイト入社(レポーター)</dd>
-                    <dd>2521年:正社員登用(コーダーに転身)</dd>
-                    <dd>2523年:フロントエンドエンジニアに転身</dd>
-                </dl> */}
-                
 
             </div>
 
