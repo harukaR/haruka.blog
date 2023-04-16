@@ -1,4 +1,5 @@
 @import 'styles/_color';
+@import 'styles/_variables';
 .header{
     box-shadow: 0 5px 3px -4px rgba(0, 0, 0, 0.1);
     background: #fff;
@@ -21,6 +22,9 @@
         .headerH1{
             font-size: 30px;
             letter-spacing: 4px;
+            @include mq(w425){
+                font-size: 25px;
+            }
         }
         .headerLink{
             margin-left: auto;

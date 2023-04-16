@@ -4,7 +4,7 @@
     font-size: 35px;
     margin-top: 80px;
     margin-bottom: 16px;
-    color: $main_BgOrange;
+    color: $main_orange;
     letter-spacing: 4px;
 }
 .name{
@@ -24,10 +24,14 @@
         .contentTitle{
             margin-bottom: 8px;
             font-size: 20px;
-            color: $main_BgOrange;
+            color: $main_orange;
         }
         .text{
-            line-height: 1.6;
+            line-height: 2;
+            .aboutLink{
+                color: $main_green;
+                font-weight: bold;
+            }
         }
     }
 }
