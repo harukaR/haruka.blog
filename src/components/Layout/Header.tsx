@@ -17,10 +17,6 @@ export const Header = () => {
             <h1 className={styles.headerH1}>haruka.log</h1>
             
           </Link>
-
-          {/* <Link href='/about' className={styles.headerLink}>
-              <p>about Me!</p>
-          </Link> */}
           <div>
             <ToggleMode/>
           </div>
