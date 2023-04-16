@@ -36,12 +36,7 @@ export default function Home({zennPosts}:Props) {
 
   
   return (
-    <motion.div
-    initial={{ opacity: 0 }} // 初期状態
-    animate={{ opacity: 1 }} // マウント時
-    exit={{ opacity: 0 }}    // アンマウント時
-    transition={{ delay: .5 }}
-  >
+
     <Layout>
       <Button>
         もっと知る！
@@ -49,19 +44,13 @@ export default function Home({zennPosts}:Props) {
         <SectionTitle>
           OutPuts
         </SectionTitle>
-        <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={inView ? 'visible' : 'hidden'}
-        variants={animationVariants}
-        transition={{ delay: .5 }}
-      >
+
         <ul className={styles.articleList}>
           {zennPosts.map((post)=>(
-             <li className={styles.articleItem}>
+             <li key={post.id} className={styles.articleItem}>
               <Link href={post.link}>
               <Image
-                src={post.enclosure.url}
+                src={post.enclosure?.url}
                 sizes="100vw"
                 width={313}
                 height={176}
@@ -83,9 +72,9 @@ export default function Home({zennPosts}:Props) {
 
           ))}
         </ul>
-        </motion.div>
+    
       </Layout>
-    </motion.div>
+
   )
 }
 export const getStaticProps = async () => {
