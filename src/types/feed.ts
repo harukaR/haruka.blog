@@ -3,6 +3,7 @@ export type Feed ={
     link:string;
     enclosure:string;
     pubDate:string;
-
+    url:any;
+    id:number;
   }
   
