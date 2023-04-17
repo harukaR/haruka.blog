@@ -1,9 +1,10 @@
 export type Feed ={
     title:string;
     link:string;
-    enclosure:string;
+    enclosure:{
+      url:string;
+    }
     pubDate:string;
-    url:any;
     id:number;
   }
   
