@@ -10,12 +10,9 @@ import React from 'react'
 
 export const ToggleMode = () => {
   const {  toggleTheme,setMode,mode,theme } = useTheme(); 
-  if(theme === "dark"){
-    setMode(false)
-  }
+
   return (
     <div onClick={toggleTheme}> 
-      
         {mode ? <FontAwesomeIcon icon={faSun} className={styles.modeIcon}  /> : <FontAwesomeIcon icon={faMoon} className={styles.modeIcon} />}
     </div>
   )
