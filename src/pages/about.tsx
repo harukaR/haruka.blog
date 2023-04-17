@@ -7,11 +7,7 @@ import Link from 'next/link'
 export default function about() {
   return (
     <>
-    <motion.div
-     initial={{ opacity: 0 }} // 初期状態
-     animate={{ opacity: 1 }} // マウント時
-     exit={{ opacity: 0 }} 
-  >
+
 
     <Layout>
 
@@ -35,7 +31,7 @@ export default function about() {
   </div>
   <div className={styles.contentParts}>
     <h3 className={styles.contentTitle}>ほんのちょっとできる</h3>
-    <p className={styles.text}>Javascript</p>
+    <p className={styles.text}>Javascrip</p>
   </div>
   <div className={styles.contentParts}>
     <h3 className={styles.contentTitle}>触ったことある</h3>
@@ -46,7 +42,7 @@ export default function about() {
 </div>
 </Layout>
 
-    </motion.div>
+
     </>
   )
 }
