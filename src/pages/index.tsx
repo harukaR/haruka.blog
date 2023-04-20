@@ -6,12 +6,9 @@ import dayjs from 'dayjs';
 import 'dayjs/locale/ja'; 
 
 import { Layout } from 'components/Layout/Layout'
-import { client } from 'lib/client'
 import {SectionTitle} from 'components/Layout/SectionTitle'
 
 import { Button } from 'components/Ui/Button'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
 import { Feed } from 'types/feed';
 
 
@@ -38,7 +35,7 @@ export default function Home({zennPosts}:Props) {
 
         <ul className={styles.articleList}>
           {zennPosts.map((post)=>(
-             <li key={post.id} className={styles.articleItem}>
+          <li key={post.id} className={styles.articleItem}>
               <Link href={post.link}>
               <Image
                 src={post.enclosure?.url}
@@ -69,8 +66,7 @@ export default function Home({zennPosts}:Props) {
   )
 }
 export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "blogs" ,queries: { limit: 6, offset: 0} });
-  const category = await client.get({ endpoint: "categories" });
+
 
   const parser = new Parser();
   const feedZenn = await parser.parseURL('https://zenn.dev/haruka_o/feed');
@@ -81,10 +77,6 @@ export const getStaticProps = async () => {
   
   return {
     props: {
-      blogs: data.contents,
-      eyecatch:data.contents,
-      category:category.contents,
-      totalCount: data.totalCount,
       zennPosts:formattedZennPosts,
     },
   };

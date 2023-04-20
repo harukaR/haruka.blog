@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+
 import { Layout } from 'components/Layout/Layout'
 import styles from 'pages/about.module.scss'
 import Link from 'next/link'

@@ -8,7 +8,7 @@ type Props ={
 export const Button =({children}:Props)=>{
     return(
         <Link href='/about'>
-                <div className={styles.button}>
+         <div className={styles.button}>
             {children}
         </div>
         </Link>

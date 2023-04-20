@@ -1,5 +1,5 @@
 import styles from 'components/Layout/sectionTitle.module.scss'
-import { motion } from "framer-motion";
+
 
 type Props ={
     children:string
