@@ -3,12 +3,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 345px));
     grid-gap: 16px;
-    justify-content: space-between;
+    justify-content: center;
     @include mq(w1100){
         max-width: 800px;
         margin: 0 auto;
         grid-template-columns: repeat(auto-fit, minmax(300px, 370px));
-        justify-content: center;
         grid-gap: 30px;
     }
     .articleItem{
